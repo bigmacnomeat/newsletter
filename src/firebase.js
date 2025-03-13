@@ -6,14 +6,14 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCdsZoacxTbgh0lvYjXb-SV7o1wqNfTVok",
-  authDomain: "the-trenches-46754.firebaseapp.com",
-  databaseURL: "https://the-trenches-46754-default-rtdb.firebaseio.com",
-  projectId: "the-trenches-46754",
-  storageBucket: "the-trenches-46754.appspot.com",
-  messagingSenderId: "647406381264",
-  appId: "1:647406381264:web:9546b0e4c793a0c74d16d5",
-  measurementId: "G-8S7ZNR9YE7"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
